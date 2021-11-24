@@ -12,7 +12,7 @@ The input is accepted in the following format:-
 
 *"{Quantity} {Type of Item} - {Item Name} at {Price}"*
 
-For Example, the input can be as follows:-
+For example, the input can be as follows:-
 - 1 Medicine BXF009 at 90
 - 1 BXF0034 Imported Medicine at 180
 
@@ -28,12 +28,12 @@ The TDD model is used to develop the application, which is built on the Factory 
 
 The Factory pattern was selected considering the following reasons:-
 1. The application expects a few items to be exempted from sales tax. The Factory pattern helps us set rules for each item.
-2. In the future, more items could be exempted from service tax. 
-    - For example :- Clothes can later be consider as a exempted item for sales tax in the future  
-3. The possiblity of having service tax (may be reduced rate) added for any one of the currently exempted item. 
-    - For example :- Books can have a service tax of 3% added in the future
-4. Imported tax rate for each item can change.
-    - For example :- Books imported tax can be reduced from 5% to 3% in the future.
+2. In the future, more items could be exempted from sales tax. 
+    - For example:- Clothes can be considered as an exempted item for sales tax in the future. The Factory pattern will allow us to add a new item for clothes.  
+3. In the future, sales tax (maybe, at a reduced rate) can be applied to any of the currently exempted items. 
+    - For example:- Books can have a sales tax of 3% in the future. The Factory pattern will allow us to add a reduced rate of sales tax for books without affecting the sales tax rate for the other items.
+4. Different rates of import tax for different items can be incorporated.
+    - For example:- Import tax for medicines may be reduced from 10% to 7% in the future. The Factory pattern will allow us to reduce the import tax rate for medicines alone without affecting the import tax rates for other items.   
 
 
 __Compiling and building the application:__
