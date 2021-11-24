@@ -1,4 +1,4 @@
-#Shopping Cart
+# Shopping Cart
 
 ## *An application that will deduct service tax for non essentials and import tax for all imported goods*
 
