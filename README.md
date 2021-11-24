@@ -1,6 +1,6 @@
 # Shopping Cart
 
-## *An application that will deduct service tax for non essentials and import tax for all imported goods*
+## *An application that will deduct sales tax for non essentials and import tax for all imported goods*
 
 __Assumptions:__
 
@@ -24,7 +24,16 @@ As a part of future scope, the application should accept any food, book or medic
 
 __Development style:__
 
-The TDD model is used to develop the application, which is built on the Factory pattern.
+The TDD model is used to develop the application, which is built on the Factory pattern. 
+
+The Factory pattern was selected considering the following reasons:-
+1. The application expects a few items to be exempted from sales tax. The Factory pattern helps us set rules for each item.
+2. In the future, more items could be exempted from service tax. 
+    - For example :- Clothes can later be consider as a exempted item for sales tax in the future  
+3. The possiblity of having service tax (may be reduced rate) added for any one of the currently exempted item. 
+    - For example :- Books can have a service tax of 3% added in the future
+4. Imported tax rate for each item can change.
+    - For example :- Books imported tax can be reduced from 5% to 3% in the future.
 
 
 __Compiling and building the application:__
